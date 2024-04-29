@@ -1,5 +1,3 @@
-package com.injava.codes;
-
 public class TriangleSides {
 
 	public boolean isRightAngled(int side1, int side2, int side3) {

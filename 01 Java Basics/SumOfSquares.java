@@ -1,5 +1,3 @@
-package com.injava.codes;
-
 public class SumOfSquares {
 
 	public long calculateSumOfSquares(int n) {

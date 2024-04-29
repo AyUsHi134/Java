@@ -1,5 +1,3 @@
-package com.injava.codes;
-
 public class TimeConverter {
 	public static int convertHoursToMinutes(int hours) {
 		if (hours < 0) {

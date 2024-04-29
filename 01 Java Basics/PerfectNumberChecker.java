@@ -1,5 +1,3 @@
-package com.injava.codes;
-
 public class PerfectNumberChecker {
 
 	public boolean isPerfectNumber(int number) {
