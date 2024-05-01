@@ -1,6 +1,23 @@
 public class MotorBike {
 	// state
 	private int speed; // instance/member variable // state of the class // specific to an object
+    
+	MotorBike(){ // no argument constructor
+		
+		//this.speed = 5; // one way to assign default value to object 
+        this(5); // calling another motorbike constructor
+	}
+
+
+    MotorBike(int speed ){ //constructor 
+		this.speed = speed;
+
+
+	}
+
+	
+
+
 
 	public int getSpeed() {
 		return speed;
@@ -28,14 +45,19 @@ public class MotorBike {
 	}
 
 	public static void main(String args[]) {
-		MotorBike ducati = new MotorBike();
-		MotorBike honda = new MotorBike();
+		MotorBike ducati = new MotorBike(100);
+		MotorBike honda = new MotorBike(200);
+        MotorBike somethingElse = new MotorBike();
 
-		ducati.start();
+		System.out.println(ducati.getSpeed());
+		System.out.println(honda.getSpeed());
+		System.out.println(somethingElse.getSpeed());
+
+		ducati.start(); 
 		honda.start();
 
 		// motorbike.speed; wrong way of calling an instance object
-		ducati.setSpeed(100);// calling an instance variable  
+		// ducati.setSpeed(100);// calling an instance variable  
 		
       
 		ducati.increaseSpeed(100);
@@ -53,8 +75,7 @@ public class MotorBike {
 		// honda.setSpeed(60); // changing speed of both the objects
 
 
-		System.out.println(ducati.getSpeed());
-		System.out.println(honda.getSpeed());
+		
 	}
 
 

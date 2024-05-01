@@ -1,6 +1,11 @@
 public class Book {
 	private int noOfCopies;
 
+	Book(int noOfCopies){ // constructor 
+		this.noOfCopies = noOfCopies;
+	}
+	
+	
 	public int getNoOfCopies() {
 		return noOfCopies;
 	}
@@ -29,9 +34,13 @@ public class Book {
 	}
 
 	public static void main(String[] args) {
-		Book artOfComputerProgramming = new Book();
-		Book effectiveJava = new Book();
-		Book cleanCode = new Book();
+		Book artOfComputerProgramming = new Book(100);
+		Book effectiveJava = new Book(50);
+		Book cleanCode = new Book(40);
+
+		System.out.println(artOfComputerProgramming.getNoOfCopies());
+		System.out.println(effectiveJava.getNoOfCopies());
+		System.out.println(cleanCode.getNoOfCopies());
 
 		artOfComputerProgramming.nameBooks();
 		effectiveJava.nameBooks();
