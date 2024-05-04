@@ -12,7 +12,7 @@ public class Point {
         return x;
     }
     
-    public int getY() {
+    public int getY() { 
         return y;
     }
 
@@ -28,8 +28,7 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        Point line = new Point(3, 4);
-        System.out.println(line.distanceTo(line));
+        
     }
 
    
