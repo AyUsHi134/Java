@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Menu {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Number1:");
         int number1 = scanner.nextInt();
