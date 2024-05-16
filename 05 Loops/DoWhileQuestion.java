@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class DoWhileQuestion {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int number = -1;
 
