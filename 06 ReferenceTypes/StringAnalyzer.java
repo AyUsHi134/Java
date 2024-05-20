@@ -1,4 +1,4 @@
-public class StringsMagic {
+public class StringAnalyzer {
 
 public boolean hasConsecutiveDuplicates(String str) {
 
@@ -21,8 +21,8 @@ public boolean hasConsecutiveDuplicates(String str) {
     
 
 public static void main(String[] args) {
-    StringsMagic wordStringsMagic = new StringsMagic();
-    System.out.println(wordStringsMagic.hasConsecutiveDuplicates(""));
+    StringAnalyzer wordStringsMagic = new StringAnalyzer();
+    System.out.println(wordStringsMagic.hasConsecutiveDuplicates("hello"));
     
 }
 }

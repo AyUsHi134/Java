@@ -1,4 +1,4 @@
-public class StringMagic {
+public class UppercaseCounter {
 
     public int countUppercaseLetters(String str) {
         if(str == null){
@@ -19,7 +19,7 @@ public class StringMagic {
 
     }
     public static void main(String[] args) {
-        StringMagic wordStringMagic = new StringMagic();
+        UppercaseCounter wordStringMagic = new UppercaseCounter();
         System.out.print(wordStringMagic.countUppercaseLetters("hello world"));
 
     }
