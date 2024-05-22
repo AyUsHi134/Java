@@ -1,20 +1,25 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Result {
 
     @SuppressWarnings("unused")
     private String name;
-    private int[] marks;
+    private ArrayList<Integer> marks = new ArrayList<Integer>();
 
     public Result(String name, int... marks){//variable argument 
         this.name = name;
-        this.marks = marks;
+        
+        for(int mark: marks) {
+            this.marks.add(mark);
+        }
     }
 
     public int getNumberOfMarks() {
 
-        return marks.length;
+        return marks.size();
     }
 
     public int getTotalSumOfMarks() {
@@ -29,26 +34,14 @@ public class Result {
 
     public int getMaximumMark() {
 
-        int maximum = Integer.MIN_VALUE;
-        for(int mark: marks){ // 94,98,10
-            if(mark>maximum){ //marks is 94 & maximum is 0 at first
-                maximum = mark;
-            }
-        }
-
-        return maximum;
+       return Collections.max(marks);
 
     }
 
     public int getMinimumMark() {
     
-        int minimum = Integer.MAX_VALUE;
-        for(int mark: marks){
-            if(mark < minimum) {
-                minimum = mark;
-            }
-        }
-        return minimum;
+        return Collections.min(marks);
+
 
     }
 
@@ -59,6 +52,18 @@ public class Result {
         return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
     }
 
+    public String toString() {
+        return name + marks;
+    }
+    
+    public void addNewMark(int mark) {
+        marks.add(mark);
+    }
+
+    public void removeMarkAtIndex(int index) {
+        marks.remove(index);
+    }
+
     public static void main(String[] args) {
         
         Result student = new Result("Ranga", 97,98,100);
@@ -67,7 +72,12 @@ public class Result {
         System.out.println("Maximum marks: " + student.getMaximumMark());
         System.out.println("Minimum marks : " + student.getMinimumMark());
         System.out.println("Average : " + student.getAverageMarks());
-
+        student.addNewMark(35); // void methods //cannot use println
+        System.out.println(student);
+        student.removeMarkAtIndex(2);
+        System.out.println(student);
     }
+
+   
      
 }
