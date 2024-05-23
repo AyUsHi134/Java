@@ -7,7 +7,7 @@ public class FactorsList {
     public List<Integer> determineAllFactors(int number) {
 
         List<Integer> factors = new ArrayList<>();
-
+ 
         if(number <= 0) {
             return new ArrayList<>();
         }
