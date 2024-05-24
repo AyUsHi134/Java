@@ -5,7 +5,7 @@ public abstract class AbstractCodes {
         getReady();
         prepareTheDish();
         cleanup();
-        
+           
     }
 
     abstract void getReady();
