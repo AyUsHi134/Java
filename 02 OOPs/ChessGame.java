@@ -1,28 +1,27 @@
-public class MarioGame implements GamingConsole {
+public class ChessGame implements GamingConsole {
 
     @Override
     public void up() {
-        System.out.println("Jump");
+        System.out.println("Move piece up");
     }
 
     @Override
     public void down() {
-        System.out.println("Goes into a hole");
+        System.out.println("Move peice down");
     }
 
     @Override
     public void left() {
-        System.out.println();
+        System.out.println("Move peice left");
     }
 
     @Override
     public void right() {
-        System.out.println("Go forward");
+        System.out.println("Move peice right");
     }
 
     public static void main(String[] args) {
-        GamingConsole game = new MarioGame();// 
-        //ChessGame game = new ChessGame();
+        ChessGame game = new ChessGame();
         game.up();
         game.down();
         game.left();
