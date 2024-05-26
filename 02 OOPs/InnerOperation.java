@@ -34,6 +34,12 @@ class Divide implements Operation {
     
 public class InnerOperation {
     public static void main(String[] args) {
+        Operation[] operations = {new Add(), new Subtract(), new Divide()};
+        for(Operation operation : operations ){
+            System.out.println(operation.perform(20,10));
+            
+
+        }
         
     }
 
