@@ -1,5 +1,5 @@
-import java .awt.*;
-import java.util.Scanner;
+//import java .awt.*;
+// import java.util.Scanner;
 
 public class Main{
      public static void main(String[] args) {
@@ -26,14 +26,35 @@ public class Main{
     double s = (u*t) + (0.5* (a*t*t));
     System.out.println(s); */
 
-    int a = 5;
+    /*int a = 5;
     while(a<10){
         System.out.println(a);
         a++;
     }
 
+    for(int b=10;b>0;b--){
+        System.out.println(b);
+    } */
 
+    /*int X,y = 1;
+    X=10;
+    if(X!=10 && X/0==0){
+        System.out.println(y);
 
-}    
     }
+    else{
+        System.out.println(++y);
+    }*/
+
+    byte b = 1;
+    do{
+        b += 1;
+
+    } while(b>0);
+
+    System.out.println("Value of b is "+ b);
+
+}
+}
+
     
