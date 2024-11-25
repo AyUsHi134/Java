@@ -12,7 +12,7 @@ public class UpperCaseFileUpdater {
                     writer.write(line.toUpperCase());
                     writer.newLine();
                 }
-            }catch(IOException e){
+            }catch(IO Exception e){
                 System.out.println(e.getMessage());
                 return;
             }
