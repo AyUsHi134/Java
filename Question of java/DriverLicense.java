@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class DriverLicense {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter age");
+        /*System.out.println("Enter age");
         int age = scanner.nextInt();
         System.out.println("Enter course is completed or not");
         boolean courseComplete = scanner.nextBoolean();
@@ -14,7 +14,7 @@ public class DriverLicense {
         } else{
             System.out.println("Not eligible for driving");
 
-        }
+        }*/
 
         System.out.println("Enter a character");
         char ch = scanner.next().charAt(0);
@@ -24,6 +24,11 @@ public class DriverLicense {
             System.out.println("The alphabet does not lie in range");
         }
 
+        System.out.println("Enter a character");
+        char userInput = scanner.next().charAt(0);
+        System.out.println("The ASCII value of " + userInput + "is:" + (int)userInput);
+
+        scanner.close();
         
      }
 }

@@ -46,13 +46,31 @@ public class Main{
         System.out.println(++y);
     }*/
 
-    byte b = 1;
+    /*byte b = 1;
     do{
         b += 1;
 
     } while(b>0);
 
-    System.out.println("Value of b is "+ b);
+    System.out.println("Value of b is "+ b);*/
+
+    int a[] = new int[5];
+    System.out.println("hello");
+    
+
+    try{
+    int b = 6/0;
+    System.out.println(a[8]);  
+      
+    }catch(ArrayIndexOutOfBoundsException e){
+        System.out.println("Printing out of limit");
+    }catch(ArithmeticException e){
+        System.out.println(e.getMessage());
+
+    }
+
+    
+
 
 }
 }

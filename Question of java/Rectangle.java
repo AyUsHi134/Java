@@ -17,3 +17,6 @@ public class Rectangle {
     System.out.println("Area is: "+ (length*breadth ));
   }
 }
+ 
+ 
+

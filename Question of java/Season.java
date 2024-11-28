@@ -31,5 +31,7 @@ public class Season {
             System.out.println("Invalid Month number");
                 break;
         }
+
+        scanner.close();
     }
 }

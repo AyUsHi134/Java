@@ -11,5 +11,6 @@ public class VotersAge {
             System.out.println("cannot vote");
         }
 
+        scanner.close();
     }
 }
