@@ -66,6 +66,8 @@ public class Main{
         System.out.println("Printing out of limit");
     }catch(ArithmeticException e){
         System.out.println(e.getMessage());
+        System.out.println(e.getStackTrace());
+        System.out.println(e);
 
     }
 
