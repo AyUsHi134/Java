@@ -8,8 +8,6 @@ public class OperatorsDemo {
         System.out.println(a--);
         System.out.println(--a);
         String b = (a > 4) ? "false": "true";
-        System.out.println("value of b is " + b);
-
-        
+        System.out.println("value of b is " + b); 
     }
 }
